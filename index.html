@@ -1,149 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GetPods</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GetPods</title>
 
-    body {
-      background: #ffffff;
-      color: #000;
-    }
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
 
-    header {
-      background: #000;
-      color: white;
-      padding: 20px;
-      border-bottom: 4px solid #ffd000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+body{
+background:#111;
+color:white;
+}
 
-    .logo {
-      font-size: 32px;
-      font-weight: bold;
-    }
+header{
+background:black;
+padding:20px;
+text-align:center;
+border-bottom:4px solid yellow;
+}
 
-    .logo span {
-      color: #ffd000;
-    }
+header h1{
+font-size:40px;
+}
 
-    .btn {
-      background: #ffd000;
-      color: black;
-      padding: 12px 20px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+header span{
+color:yellow;
+}
 
-    .hero {
-      background: #000;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
+.produtos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:30px;
+}
 
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
+.card{
+background:#1d1d1d;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 0 15px rgba(0,0,0,0.5);
+transition:0.3s;
+}
 
-    .hero span {
-      color: #ffd000;
-    }
+.card:hover{
+transform:scale(1.03);
+}
 
-    .produtos {
-      padding: 40px 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
 
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
+.info{
+padding:20px;
+}
 
-    .card img {
-      width: 100%;
-      height: 300px;
-      object-fit: cover;
-    }
+.info h2{
+margin-bottom:10px;
+}
 
-    .card-content {
-      padding: 20px;
-    }
+.preco{
+color:yellow;
+font-size:28px;
+font-weight:bold;
+margin-bottom:15px;
+}
 
-    .card h2 {
-      margin-bottom: 10px;
-    }
+.botao{
+display:block;
+text-align:center;
+background:yellow;
+color:black;
+padding:12px;
+border-radius:12px;
+font-weight:bold;
+text-decoration:none;
+}
 
-    .preco {
-      color: #d4a800;
-      font-size: 28px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      background: #000;
-      color: white;
-      text-align: center;
-      padding: 30px;
-      margin-top: 40px;
-    }
-  </style>
+footer{
+text-align:center;
+padding:30px;
+background:black;
+margin-top:40px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <div class="logo">GET<span>PODS</span></div>
-  <a class="btn" href="https://wa.me/5518997018388" target="_blank">WhatsApp</a>
+<h1>GET<span>PODS</span></h1>
+<p>Os melhores pods da internet</p>
 </header>
-
-<section class="hero">
-  <h1>Perfumes <span>Importados</span></h1>
-  <p>Os melhores perfumes com preços incríveis.</p>
-  <br>
-  <a class="btn" href="https://wa.me/5518997018388" target="_blank">Comprar Agora</a>
-</section>
 
 <section class="produtos">
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=crop" alt="Perfume">
-    <div class="card-content">
-      <h2>Sauvage Dior</h2>
-      <div class="preco">R$ 499,90</div>
-      <a class="btn" href="https://wa.me/5518997018388" target="_blank">Comprar</a>
-    </div>
-  </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?q=80&w=1200&auto=format&fit=crop" alt="">
+<div class="info">
+<h2>Ignite V50</h2>
+<div class="preco">R$ 89,90</div>
+<a class="botao" href="https://wa.me/5518997018388" target="_blank">
+Comprar
+</a>
+</div>
+</div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?q=80&w=800&auto=format&fit=crop" alt="Perfume">
-    <div class="card-content">
-      <h2>Bleu de Chanel</h2>
-      <div class="preco">R$ 599,90</div>
-      <a class="btn" href="https://wa.me/5518997018388" target="_blank">Comprar</a>
-    </div>
-  </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1200&auto=format&fit=crop" alt="">
+<div class="info">
+<h2>Elf Bar</h2>
+<div class="preco">R$ 75,90</div>
+<a class="botao" href="https://wa.me/5518997018388" target="_blank">
+Comprar
+</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?q=80&w=1200&auto=format&fit=crop" alt="">
+<div class="info">
+<h2>Lost Mary</h2>
+<div class="preco">R$ 95,90</div>
+<a class="botao" href="https://wa.me/5518997018388" target="_blank">
+Comprar
+</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?q=80&w=1200&auto=format&fit=crop" alt="">
+<div class="info">
+<h2>Vozol</h2>
+<div class="preco">R$ 69,90</div>
+<a class="botao" href="https://wa.me/5518997018388" target="_blank">
+Comprar
+</a>
+</div>
+</div>
 
 </section>
 
 <footer>
-  <h2>GET<span style="color:#ffd000">PODS</span></h2>
-  <p>Perfumes importados com atendimento rápido no WhatsApp.</p>
+<h2>GET<span style="color:yellow;">PODS</span></h2>
+<p>Pedidos direto pelo WhatsApp</p>
 </footer>
 
 </body>
