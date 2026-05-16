@@ -1,0 +1,17 @@
+backend:
+  name: github
+  branch: main # ou a branch que você usa
+
+media_folder: "assets/images" # onde as imagens ficam
+
+collections:
+  - name: produtos
+    label: Produtos
+    folder: "_produtos" # pasta onde os arquivos ficam
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Nome", name: "nome", widget: "string"}
+      - {label: "Preço", name: "preco", widget: "string"}
+      - {label: "Imagem", name: "imagem", widget: "image"}
+      - {label: "Descrição", name: "descricao", widget: "text"}
